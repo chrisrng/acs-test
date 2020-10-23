@@ -1,7 +1,6 @@
 # acs-test
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Test app connecting to Azure Communication Services with Ember.
 
 ## Prerequisites
 
@@ -17,6 +16,7 @@ You will need the following things properly installed on your computer.
 * `git clone <repository-url>` this repository
 * `cd acs-test`
 * `npm install`
+* Add your token in the variable `userToken` in the file `app/routes/call.js`
 
 ## Running / Development
 
