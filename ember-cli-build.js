@@ -5,6 +5,16 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
+    // https://github.com/ef4/ember-auto-import#customizing-build-behavior
+    autoImport: {
+      skipBabel: [{
+        package: '@azure/communication-calling',
+        semverRange: '*'
+      }, {
+        package: '@azure/communication-common',
+        semverRange: '*'
+      }],
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated
