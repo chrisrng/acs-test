@@ -18,10 +18,12 @@ export default class CallRoute extends Route {
       .then(value => {
         debugger;
         console.log(value);
+        alert('working!');
       })
       .catch(e => {
         debugger;
         console.log(e);
+        alert('failed!');
         throw e;
       });
   }
